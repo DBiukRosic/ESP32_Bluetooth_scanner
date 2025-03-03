@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #abe59d;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Header Styles */
+h1 {
+  color: #185512;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #3a974d;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #5da85b;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+li {
+  background-color: #bbeead;
+  padding: 20px; /* Increased padding to make space for both name and timestamp */
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Align name and timestamp vertically */
+  align-items: center; /* Center everything inside the list item */
+}
+
+li:hover {
+  background-color: #4b9f32;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Dropdown Styles*/
+.dropdown-content {
+  background-color: #d8f5d1;
+  padding: 2px; /* Increased padding to make box larger */
+  margin-top: 10px; /* Reduced margin to bring the box closer to the student name */
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-size: 1.1em;
+  text-align: center; /* Center text inside the dropdown */
+  width: 80%; /* Make the box wider */
+  transition: all 0.3s ease;
+}
+
+/* Timestamp box styling */
+.dropdown-content p {
+  font-size: 0.9em; /* Slightly larger font size */
+  margin: 0;
+  padding: 10px 0; /* More padding for a more spacious box */
+  background-color: #d8f5d1; /* Light green background */
+  border-radius: 5px;
+  width: 100%; /* Ensure the timestamp box fills the width */
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Error or No Students Found */
+p {
+  color: #11550a;
+  font-size: 1.5em;
+}
